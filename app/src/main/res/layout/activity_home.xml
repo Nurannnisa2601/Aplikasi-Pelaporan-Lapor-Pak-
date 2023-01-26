@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/hai_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Anonim"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:textSize="36dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="51dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/avatar" />
+
+        <TextView
+        android:id="@+id/title_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/hai_user"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="Selamat Datang di Dashboard"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="134dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="605dp"
+        android:background="@drawable/background_grey"
+        android:elevation="800dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Laporan"
+            android:fontFamily="@font/poppinslight"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black" >
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="330dp"
+            android:layout_height="140dp"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/bck_kebakaran3">
+
+        </ImageView>
+
+            <ImageView
+                android:layout_width="167dp"
+                android:layout_height="150dp"
+                android:src="@drawable/fireman"
+                android:layout_alignRight="@id/imageView1"
+                android:layout_marginTop="57dp"
+                android:layout_marginRight="13dp" >
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:clickable="true"
+            android:layout_width="330dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/tescard" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="145dp"
+                android:src="@drawable/doctor"
+                android:layout_alignRight="@id/imageView2"
+                android:layout_marginRight="-26dp" >
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="330dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/bck_aspirasi" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="157dp"
+                android:src="@drawable/aspirasi"
+                android:layout_alignRight="@id/imageView3"
+                android:layout_marginRight="-15dp" >
+
+            </ImageView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

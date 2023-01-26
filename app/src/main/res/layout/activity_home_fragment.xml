@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1F1"
+    tools:context=".menu.home.HomeFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="57dp"
+            android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <View
+                                    android:id="@+id/garis1"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="30dp"
+                                    android:layout_height="5dp"
+                                    android:background="@drawable/bg_search2"/>
+
+                                <View
+                                    android:id="@+id/garis2"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="5dp"
+                                    android:background="@drawable/bg_search2"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="55dp">
+
+
+
+
+                                </LinearLayout>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/notifications"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="1dp"
+                                    app:cardBackgroundColor="@color/colorTextPrimary"
+                                    app:cardCornerRadius="50dp">
+
+                                        <ImageView
+                                            android:id="@+id/idnotifhistory"
+                                            android:layout_width="22dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/ic_notifications" />
+
+                                </androidx.cardview.widget.CardView>
+
+
+                        </RelativeLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp">
+
+                                <TextView
+                                    android:id="@+id/TVuser2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="0.02"
+                                    android:text="Hey,"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBaseline_toBaselineOf="@+id/TVuser3"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/TVuser3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:letterSpacing="0.02"
+                                    android:text=""
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/TVuser2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Silahkan Lapor Pengaduhan Anda"
+                            android:textColor="@color/colorTextPrimary"
+                            android:letterSpacing="0.08"
+                            android:layout_marginTop="3dp"
+                            android:textSize="18dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="27dp"
+                            android:clickable="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            app:cardBackgroundColor="#DDFFBD59"
+                            app:cardCornerRadius="13dp">
+
+                                <ImageView
+                                    android:layout_width="372dp"
+                                    android:layout_height="300dp"
+                                    android:layout_marginTop="-62dp"
+                                    android:src="@drawable/bg_orange_card"/>
+
+                                <ImageView
+                                    android:layout_width="170dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="left"
+                                    android:src="@drawable/illustration_forcard2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="160dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="35dp"
+                                            android:text="Lapor Pak"
+                                            android:textColor="@color/white"
+                                            android:textSize="25dp"
+                                            android:fontFamily="@font/poppinsbold"
+                                            android:textStyle="bold"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="By Kelompok 2"
+                                            android:textColor="@color/white"
+                                            android:letterSpacing="0.02"
+                                            android:fontFamily="@font/poppinslight"
+                                            android:textSize="11dp"
+                                            />
+
+                                        <com.google.android.material.button.MaterialButton
+                                            app:cornerRadius="8dp"
+                                            android:layout_width="50dp"
+                                            android:layout_height="33dp"
+                                            android:textAllCaps="false"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="About"
+                                            android:padding="2dp"
+                                            android:textSize="9sp"
+                                            android:textColor="@color/colorTextPrimary"/>
+
+
+                                </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/judul_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28dp"
+                            android:layout_marginBottom="7dp"
+                            android:letterSpacing="0.02"
+                            android:text="Kategori Laporan"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_pemadam"
+                                    android:layout_width="155dp"
+                                    android:layout_height="185dp"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="#95FF0000"
+                                    app:cardCornerRadius="15dp"
+                                    android:clickable="true"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    >
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/firemanflat"
+                                            android:layout_marginTop="30dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:layout_marginLeft="10dp">
+
+                                                <RelativeLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginRight="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical"
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_alignParentLeft="true">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Category"
+                                                                    android:textSize="11dp"
+                                                                    android:textColor="@color/white" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Pemadam Kebakaran"
+                                                                    android:textStyle="bold"
+                                                                    android:textSize="13dp"
+                                                                    android:textColor="@color/white"
+                                                                    android:layout_marginTop="0dp"/>
+
+                                                        </LinearLayout>
+
+                                                </RelativeLayout>
+
+
+                                        </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_bencana"
+                                    android:layout_width="155dp"
+                                    android:layout_height="185dp"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="#B4FBB401"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:clickable="true"
+                                    android:background="?android:attr/selectableItemBackground">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/bencanaalam"
+                                            android:layout_marginTop="30dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:layout_marginLeft="10dp">
+
+                                                <RelativeLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginRight="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical"
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_alignParentLeft="true">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Category"
+                                                                    android:textSize="11dp"
+                                                                    android:textColor="@color/white" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Bencana Alam"
+                                                                    android:textStyle="bold"
+                                                                    android:textSize="13dp"
+                                                                    android:textColor="@color/white"
+                                                                    android:layout_marginTop="0dp"/>
+
+                                                        </LinearLayout>
+
+                                                </RelativeLayout>
+
+
+                                        </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_aspirasi"
+                                    android:layout_width="155dp"
+                                    android:layout_height="185dp"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="#950066FF"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_marginTop="-0dp"
+                                    android:clickable="true"
+                                    android:background="?android:attr/selectableItemBackground">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/illusaspirasi"
+                                            android:layout_marginTop="40dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:layout_marginLeft="10dp">
+
+                                                <RelativeLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginRight="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical"
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_alignParentLeft="true">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Category"
+                                                                    android:textSize="11dp"
+                                                                    android:textColor="@color/white" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Aspirasi Masyarakat"
+                                                                    android:textStyle="bold"
+                                                                    android:textSize="13dp"
+                                                                    android:textColor="@color/white"
+                                                                    android:layout_marginTop="0dp"/>
+
+                                                        </LinearLayout>
+
+                                                </RelativeLayout>
+
+
+                                        </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_callcenter"
+                                    android:layout_width="155dp"
+                                    android:layout_height="185dp"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="#BF04DA4B"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_marginTop="-0dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:clickable="true"
+                                    android:background="?android:attr/selectableItemBackground">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/callcenter"
+                                            android:layout_marginTop="45dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:layout_marginLeft="10dp">
+
+                                                <RelativeLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginRight="15dp">
+
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical"
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_alignParentLeft="true">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Category"
+                                                                    android:textSize="11dp"
+                                                                    android:textColor="@color/white" />
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Chat Center"
+                                                                    android:textStyle="bold"
+                                                                    android:textSize="13dp"
+                                                                    android:textColor="@color/white"
+                                                                    android:layout_marginTop="0dp"/>
+
+                                                        </LinearLayout>
+
+                                                </RelativeLayout>
+
+
+                                        </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"/>
+
+                </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

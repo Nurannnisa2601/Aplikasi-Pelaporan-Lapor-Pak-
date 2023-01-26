@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bcktes">
+
+
+    <EditText
+        android:id="@+id/ETR0"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:width="200dp"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:hint="Masukkan Email anda"
+        android:textSize="12dp"
+        android:background="@drawable/shapes_eth" />
+
+
+    <EditText
+        android:id="@+id/ETR"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:width="200dp"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:hint="Masukkan Username anda"
+        android:textSize="12dp"
+        android:background="@drawable/shapes_eth" />
+
+    <EditText
+        android:id="@+id/ETR1"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:width="200dp"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:hint="Masukkan NIK Anda"
+        android:textSize="12dp"
+        android:background="@drawable/shapes_eth" />
+
+    <EditText
+        android:id="@+id/ETR2"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:width="200dp"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:hint="Masukkan Password Anda"
+        android:textSize="12dp"
+        android:background="@drawable/shapes_eth" />
+
+    <EditText
+        android:id="@+id/ETR3"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/ETR2"
+        android:hint="Masukkan Password Anda"
+        android:textSize="12dp"
+        android:background="@drawable/shapes_eth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create new"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textSize="12dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:textSize="12dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIK"
+        android:textSize="12dp"
+        android:layout_below="@id/ETR"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:textSize="12dp"
+        android:layout_below="@id/ETR1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM PASSWORD"
+        android:textSize="12dp"
+        android:layout_below="@id/ETR2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ETR3"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/BT1"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_below="@id/ETR3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="260dp"
+        android:height="60dp"
+        android:background="@drawable/shapes2"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/idIconBack"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/back"
+        />
+
+
+</RelativeLayout>

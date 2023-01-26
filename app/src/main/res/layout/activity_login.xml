@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcktes">
+
+    <EditText
+        android:id="@+id/ET1"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:width="200dp"
+        android:paddingLeft="15dp"
+        android:inputType="text"
+        android:hint="Masukkan Email Anda"
+        android:textSize="12dp"
+        android:background="@drawable/shapes_eth" />
+
+    <EditText
+        android:id="@+id/ET2"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/ET1"
+        android:hint="Masukkan Password Anda"
+        android:textSize="12dp"
+        android:background="@drawable/shapes_eth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/megaphone1"
+        android:text="LOGIN"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textSize="12dp"
+        android:layout_marginTop="379dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:textSize="12dp"
+        android:layout_below="@id/ET1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+
+    <Button
+        android:id="@+id/idBTlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_below="@id/ET2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="260dp"
+        android:height="60dp"
+        android:background="@drawable/shapes2"
+        android:text="Log In"
+        android:textColorHint="@color/orange"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/idTVdaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun? Daftar Sini.."
+        android:textSize="12dp"
+        android:layout_below="@id/idBTlogin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="77dp"
+        android:textColor="@color/blue"
+        android:fontFamily="sans-serif-light"/>
+
+
+
+    <ImageView
+        android:id="@+id/megaphone1"
+        android:layout_width="141dp"
+        android:layout_height="143dp"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/megaphone"/>
+
+    <TextView
+        android:id="@+id/TVLapor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="146dp"
+        android:text="LAPOR"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/TVLapor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAK !"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="176dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215dp"
+        android:layout_marginBottom="310dp"
+        android:text="Lapor Masalah Anda Disini"
+        android:textColor="@color/yellow2"
+        android:fontFamily="@font/poppinslight"/>
+
+</RelativeLayout>
